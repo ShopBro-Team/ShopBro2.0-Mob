@@ -12,4 +12,4 @@ We are currently using React-Native, EXPO, Redux, JWT (For social authentication
 To view more information about how the ShopBro team built the functionality applied in this react-native code - please see our ShopBro2.0-web repo and README for more information:  https://github.com/ShopBro-Team/ShopBro2.0-Web/blob/master/README.md
 
 ## WANT TO SEE OUR WEB APPLICATION IN PRODUCTION
-our API is currently in project via Heroku.  To view our web application please visit: https://shopbro.herokuapp.com/#/
+Our API is currently in production via Heroku.  To view our web application please visit: https://shopbro.herokuapp.com/#/
