@@ -6,7 +6,7 @@ We are currently using React-Native and Expo XDE to build our mobile applicaiton
 We chose Expo XDE to allow for our app to be used across both Android and iOS operating systems.
 
 ## Our Tools
-We are currently using React-Native, EXPO, Redux, JWT (For social authentication) - to build this app.
+We are currently using React-Native, EXPO, Redux, JWT (For social authentication), ShopBro2.0 web api's (back end) - to build this app.
 
 ## Commented code for Team
 Team - to keep our mobile app running efficiently as possible, I (Engie) have created a 'commented-out-for-team' branch with comments I made during the days of our Final Project at EDA (May 2018).  If you're wanting to know how our React-Native app has been constructed - please refer to the comments in this branch.
