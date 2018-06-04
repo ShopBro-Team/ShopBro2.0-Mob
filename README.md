@@ -1,5 +1,5 @@
 # ShopBro-2.0-mobile
-The react-native mobile app version of our ShopBro 2.0 app.
+The react-native mobile app version of our ShopBro2.0-Web app.
 
 ## ABOUT 
 We are currently using React-Native and Expo XDE to build our mobile applicaiton of ShopBro. 
