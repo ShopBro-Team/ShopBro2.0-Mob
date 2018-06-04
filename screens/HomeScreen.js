@@ -65,6 +65,7 @@ class HomeScreen extends React.Component {
                 Logout
               </Text>
             </TouchableOpacity>
+            <Text>Hi BAILEY!!</Text>
           </View>
 
           <View style={styles.getStartedContainer}>
