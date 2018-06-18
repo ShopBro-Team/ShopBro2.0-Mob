@@ -8,11 +8,23 @@ class Budget extends Component {
   render() {
     return (
       <View style={styles.container}>
-         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-            <View>
-              <Text style={styles.getStartedText}>Your budget is $:</Text>  
-            </View>
-          </ScrollView>
+        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+          <View>
+            <Text style={styles.getStartedText}>Your budget is $: ${(this.props.budget/100).toFixed(2)}</Text>  
+
+            { this.props.budget - this.props.totalSpend > 0
+            ?
+            <Text >
+            You have ${((this.props.budget - this.props.totalSpend)/100).toFixed(2)} left
+            </Text>   
+            :
+            <Text >
+            You have over spent by ${((this.props.totalSpend - this.props.budget)/100).toFixed(2)}
+            </Text> 
+            }
+            
+          </View>
+        </ScrollView>
       </View> 
     )
   }
@@ -67,4 +79,12 @@ const styles = StyleSheet.create({
     },
   });
 
-export default connect()(Budget)
+  const mapStateToProps = (state) => {
+    
+    return {
+      budget: state.budget,
+      totalSpend: state.totalSpend
+    }
+  }
+
+export default connect(mapStateToProps)(Budget)
