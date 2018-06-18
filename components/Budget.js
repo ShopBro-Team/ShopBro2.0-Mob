@@ -2,46 +2,15 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, ScrollView, 
         TouchableOpacity, TextInput } from 'react-native'
 import { connect } from 'react-redux'
-import { addBudget } from '../redux/actions/budget'
-import { navigate } from '../redux/actions/navigate'
 
-class BudgetSetting extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      budget: '',
-    }
-    this.handleSubmit = this.handleSubmit.bind(this)
-  }
-
-  handleSubmit(event) {
-    event.preventDefault()
-    let budget = this.state.budget*100
-
-    this.props.dispatch(addBudget(budget))
-    this.props.dispatch(navigate('budget'))
-  }  
-
+class Budget extends Component {
+ 
   render() {
     return (
       <View style={styles.container}>
          <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
             <View>
-              <Text style={styles.getStartedText}>Set your budget $:</Text>
-              <TextInput 
-                placeholder='Your budget'
-                name='budget'
-                placeholderTextColor='#85756E'
-                returnKeyType='next'
-                // onSubmitEditing={() => this.passwordInput.focus()}
-                autoCorrect={false}
-                underlineColorAndroid='transparent'
-                style={styles.input}
-                onChangeText={(text) => this.setState({budget: text})}
-                />
-                <TouchableOpacity style={styles.buttonContainer} onPress={this.handleSubmit} >
-                    <Text style={styles.input}>SUBMIT</Text>
-                </TouchableOpacity>  
+              <Text style={styles.getStartedText}>Your budget is $:</Text>  
             </View>
           </ScrollView>
       </View> 
@@ -98,4 +67,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default connect()(BudgetSetting)
+export default connect()(Budget)
