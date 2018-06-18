@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Platform, View, Text, StyleSheet, Image, KeyboardAvoidingView, ScrollView, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { logoutUser } from '../redux/actions/logout'
+import BudgetSetting from '../components/BudgetSetting'
 
 class LinksScreen extends React.Component {
   static navigationOptions = {
@@ -24,6 +25,7 @@ class LinksScreen extends React.Component {
                         Logout
                     </Text>
                 </TouchableOpacity>
+                <BudgetSetting />
             </View>
             </ScrollView>
 
