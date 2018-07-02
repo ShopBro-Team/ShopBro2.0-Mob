@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn start
+  /usr/local/bin/node /usr/local/bin/yarn ios
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+  /Users/stevetorrens/.rvm/gems/ruby-2.4.1/bin:/Users/stevetorrens/.rvm/gems/ruby-2.4.1@global/bin:/Users/stevetorrens/.rvm/rubies/ruby-2.4.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/stevetorrens/.rvm/bin
 
 Yarn version: 
   1.5.1
@@ -7365,9 +7365,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 127
+  Exit code: 1
   Command: sh
-  Arguments: -c react-native-scripts start
+  Arguments: -c react-native-scripts ios
   Directory: /Users/stevetorrens/workspace/group-projects/ShopBro2.0-Mob
   Output:
   
