@@ -4,6 +4,8 @@ function dashboardShoppingListTotals (state = [], action) {
     switch (action.type) {
       case 'RECIEVE_SHOPPINGLIST_TOTALS_BY_ID':
         return [...action.shoppinglistTotals]
+      case 'ERROR': 
+        return state 
       default:
         return state
     }
