@@ -18,7 +18,7 @@ class Test extends Component {
         <View style={styles.container} >
             {this.props.auth.isAuthenticated ? <RootNavigation /> : <Login />} 
         </View>
-    );
+    )
   }
 }
 

@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import { Platform, View, Text, StyleSheet, Image, KeyboardAvoidingView, ScrollView, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { logoutUser } from '../redux/actions/logout'
+import BudgetSetting from '../components/BudgetSetting'
+import Budget from '../components/Budget'
 
 class LinksScreen extends React.Component {
   static navigationOptions = {
@@ -24,6 +26,7 @@ class LinksScreen extends React.Component {
                         Logout
                     </Text>
                 </TouchableOpacity>
+                {this.props.budgetView === 'setting' ? <BudgetSetting /> : <Budget />}
             </View>
             </ScrollView>
 
@@ -103,8 +106,11 @@ const styles = StyleSheet.create({
 
 
 const mapStateToProps = (state) => {
+  console.log('LinkScreen redux state', state)
   return {
-    auth: state.auth
+    auth: state.auth,
+    budgetView: state.budgetView,
+    budget: state.budget,
   }
 }
 
